@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>GET DOM</title>
+	</head>
+	<body>
+		<div class="box"></div>
+		<div id="box"></div>
+		<div name="box"></div>
+		<a href=""></a>
+		<script type="text/javascript" src="js/get_dom.js" ></script>
+		<script type="text/javascript">
+			window.onload = function(){
+				g('.box').innerHTML = "这是一个class类。";
+				g('#box').innerHTML = "这是一个id类。";
+				g('$box').innerHTML = "这是一个name类。";
+				g('a').innerHTML = "这是一个tag类。";
+			}
+		</script>
+	</body>
+</html>
